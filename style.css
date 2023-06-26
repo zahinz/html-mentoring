@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Bebas Neue;
+  color: white;
+}
+
+body {
+  background-color: #1e1f2f;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-column,
+.right-column {
+  width: 50vw;
+  height: 70vh;
+}
+
+/* css for left column */
+
+.left-column {
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.left-upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo-container {
+  width: 50px;
+  height: 50px;
+  /* parent always position relative */
+  position: relative;
+  margin-right: 15px;
+}
+
+.small-white-box {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  /* children position absolute */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.word-icon {
+  background-color: #e82c4f;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* children position absolute */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.word-icon > h2 {
+  font-size: 30px;
+}
+
+.subtitle {
+  font-size: 32px;
+}
+
+.left-middle > h1 {
+  font-size: 80px;
+  font-family: Bebas Neue;
+  line-height: 93.5%;
+}
+
+.left-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+}
+
+.icon-container > img {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-container > h3 {
+  font-size: 32px;
+  white-space: nowrap;
+}
+
+/* css for right column */
+
+.right-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.parent-white-rect {
+  width: 50%;
+  height: 80%;
+  border: 30px solid white;
+}
+
+.white-rect-1,
+.white-rect-2 {
+  width: 61.2%;
+}
+
+.white-rect-1 {
+  height: 76%;
+  position: absolute;
+  top: -150px;
+  right: -50px;
+  opacity: 0.5;
+}
+
+.white-rect-2 {
+  height: 96%;
+  position: absolute;
+  bottom: -150px;
+  left: -50px;
+  opacity: 0.3;
+}
